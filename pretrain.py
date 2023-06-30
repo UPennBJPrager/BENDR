@@ -47,7 +47,11 @@ def parse_args():
 
 
 if __name__ == '__main__':
+
+    # Load in the arguments
     args = parse_args()
+
+    # Use dn3 Experiment config library
     experiment = ExperimentConfig(args.config)
 
     training, validation, target_thinkers = load_datasets(experiment)
